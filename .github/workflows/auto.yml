@@ -10,11 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: indexnow-action
-        uses: bojieyang/indexnow-action@main
-        with:
-          sitemap-location: 'https://blog.liaoke.xyz/sitemap.xml'
-          key: ${{ secrets.INDEXNOW_KEY }}
-          endpoint: 'www.bing.com'
-          lastmod-required: false
-          since-unit: 'minute'
-          failure-strategy: 'error'
+ 
