@@ -20,5 +20,6 @@ jobs:
 
       # ③ 执行仓库根目录下的 1.sh
       - name: Run 1.sh
-        env: INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        env: 
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: ./1.sh
