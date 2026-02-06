@@ -6,7 +6,7 @@
 
 # 配置区域 - 修改这里的配置
 DOMAIN="blog.liaoke.xyz"                           # 你的域名
-API_KEY="$INDEXNOW_KEY"                    # 你的IndexNow API密钥
+API_KEY=$INDEXNOW_KEY                    # 你的IndexNow API密钥
 SITEMAP_URL="https://blog.liaoke.xyz/sitemap.xml" # sitemap地址
 
 # ========================================
