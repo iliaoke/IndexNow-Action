@@ -1,4 +1,5 @@
 name: 'IndexNow'
+
 on:
   workflow_dispatch:
   schedule:
@@ -9,5 +10,14 @@ jobs:
   check-and-submit:
     runs-on: ubuntu-latest
     steps:
-      - name: indexnow-action
- 
+      # ① 拉取仓库代码（必须有）
+      - name: Checkout repository
+        uses: actions/checkout@main
+
+      # ② 赋予脚本执行权限（可选但强烈建议）
+      - name: Make script executable
+        run: chmod +x ./1.sh
+
+      # ③ 执行仓库根目录下的 1.sh
+      - name: Run 1.sh
+        run: ./1.sh
