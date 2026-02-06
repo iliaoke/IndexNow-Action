@@ -13,3 +13,6 @@ jobs:
         with:
           sitemap-location: 'https://blog.liaoke.xyz/sitemap.xml'
           key: ${{ secrets.INDEXNOW_KEY }}
+          endpoint: 'api.indexnow.org'
+          lastmod-required: false
+          since-unit: 'minute'
